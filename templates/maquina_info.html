@@ -1,0 +1,125 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>{{ titulo }}</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+<img src="{{ url_for('static', filename='img/logo.png') }}"
+class="logo">
+
+<h2>FACULTAD DE TECNOLOGÍA</h2>
+
+<h1>CARRERA DE AERONÁUTICA</h1>
+
+<h3>PLATAFORMA DIGITAL DE AYUDA RÁPIDA</h3>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-contenido">
+
+<h2>{{ titulo }}</h2>
+
+<p>
+
+Información técnica, manuales,
+documentación y material de apoyo.
+
+</p>
+
+</div>
+
+</section>
+
+<main style="width:90%;max-width:1200px;margin:auto;padding:40px;">
+
+<div class="cards">
+
+<div class="card manuales">
+
+<div class="icono">📄</div>
+
+<h2>Información Técnica</h2>
+
+<p>
+
+Documentación e información
+relacionada con la máquina.
+
+</p>
+
+</div>
+
+<div class="card documentacion">
+
+<div class="icono">📘</div>
+
+<h2>Manuales</h2>
+
+<p>
+
+Manuales operativos,
+mantenimiento y seguridad.
+
+</p>
+
+</div>
+
+<div class="card maquinas">
+
+<div class="icono">📂</div>
+
+<h2>Carpeta Completa</h2>
+
+<p>
+
+Acceso a todos los recursos
+almacenados en Google Drive.
+
+</p>
+
+<a href="{{ carpeta }}"
+target="_blank"
+class="btn-card"
+style="text-decoration:none;">
+Abrir Carpeta
+</a>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-contenido">
+
+<span>🎓 UNIVERSIDAD MAYOR DE SAN ANDRÉS</span>
+
+<span>🏛 FACULTAD DE TECNOLOGÍA</span>
+
+<span>✈ CARRERA DE AERONÁUTICA</span>
+
+</div>
+
+</footer>
+
+</body>
+
+</html>
+```
