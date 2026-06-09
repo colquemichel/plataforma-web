@@ -1,0 +1,753 @@
+```css
+/* =====================================
+   PLATAFORMA DIGITAL AERONÁUTICA
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#eef2f7;
+    color:#222;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header{
+
+    background:linear-gradient(
+        135deg,
+        #002b66,
+        #003d80,
+        #002b66
+    );
+
+    text-align:center;
+
+    color:white;
+
+    padding:40px 20px;
+
+    box-shadow:0 4px 20px rgba(0,0,0,.25);
+
+}
+
+.logo{
+
+    width:260px;
+
+    max-width:90%;
+
+    margin-bottom:15px;
+
+}
+
+header h2{
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+header h1{
+
+    font-size:58px;
+
+    margin-bottom:10px;
+
+}
+
+header h3{
+
+    font-weight:400;
+
+    letter-spacing:2px;
+
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+
+    padding:60px 20px;
+
+    background:white;
+
+}
+
+.hero-contenido{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.hero h2{
+
+    font-size:48px;
+
+    color:#003366;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    color:#555;
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+/* =====================================
+   TARJETAS
+===================================== */
+
+main{
+
+    width:95%;
+
+    max-width:1500px;
+
+    margin:auto;
+
+    padding:40px 0 60px 0;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+/* =====================================
+   PLATAFORMA DIGITAL AERONÁUTICA
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#eef2f7;
+    color:#222;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header{
+
+    background:linear-gradient(
+        135deg,
+        #002b66,
+        #003d80,
+        #002b66
+    );
+
+    text-align:center;
+
+    color:white;
+
+    padding:40px 20px;
+
+    box-shadow:0 4px 20px rgba(0,0,0,.25);
+
+}
+
+.logo{
+
+    width:260px;
+
+    max-width:90%;
+
+    margin-bottom:15px;
+
+}
+
+header h2{
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+header h1{
+
+    font-size:58px;
+
+    margin-bottom:10px;
+
+}
+
+header h3{
+
+    font-weight:400;
+
+    letter-spacing:2px;
+
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+
+    padding:60px 20px;
+
+    background:white;
+
+}
+
+.hero-contenido{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.hero h2{
+
+    font-size:48px;
+
+    color:#003366;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    line-height:1.9;
+
+    color:#555;
+
+    max-width:1000px;
+
+    margin:auto;
+
+}
+
+/* =====================================
+   TARJETAS
+===================================== */
+
+main{
+
+    width:95%;
+
+    max-width:1500px;
+
+    margin:auto;
+
+    padding:40px 0 60px 0;
+
+}
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+    color:#222;
+
+    padding:35px;
+
+    min-height:350px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.icono{
+
+    font-size:90px;
+
+    margin-top:15px;
+
+    margin-bottom:10px;
+}
+
+.card h2{
+
+    color:#003366;
+
+    font-size:38px;
+
+    margin-top:10px;
+
+    margin-bottom:15px;
+}
+
+.card p{
+
+    color:#555;
+
+    font-size:19px;
+
+    line-height:1.8;
+}
+
+/* =====================================
+   BOTONES TARJETAS
+===================================== */
+
+.btn-card{
+
+    color:white;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+    margin-top:25px;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.15);
+}
+
+/* =====================================
+   COLORES
+===================================== */
+
+.manuales{
+
+    border-top:8px solid #0d47a1;
+
+}
+
+.manuales .btn-card{
+
+    background:#0d47a1;
+
+}
+
+.documentacion{
+
+    border-top:8px solid #16a34a;
+
+}
+
+.documentacion .btn-card{
+
+    background:#16a34a;
+
+}
+
+.herramientas{
+
+    border-top:8px solid #f59e0b;
+
+}
+
+.herramientas .btn-card{
+
+    background:#f59e0b;
+
+}
+
+.maquinas{
+
+    border-top:8px solid #7c3aed;
+
+}
+
+.maquinas .btn-card{
+
+    background:#7c3aed;
+
+}
+
+.qr{
+
+    border-top:8px solid #0891b2;
+
+}
+
+.qr .btn-card{
+
+    background:#0891b2;
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+
+    background:#002b66;
+
+    color:white;
+
+    padding:25px;
+
+    margin-top:40px;
+
+}
+
+.footer-contenido{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:50px;
+
+    flex-wrap:wrap;
+
+    text-align:center;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:768px){
+
+    header h1{
+
+        font-size:34px;
+
+    }
+
+    header h2{
+
+        font-size:18px;
+
+    }
+
+    .logo{
+
+        width:180px;
+
+    }
+
+    .hero h2{
+
+        font-size:28px;
+
+    }
+
+    .hero p{
+
+        font-size:17px;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* =====================================
+   EFECTO PROFESIONAL
+===================================== */
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    top:-30px;
+
+    right:-30px;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+.icono{
+
+    font-size:70px;
+
+    margin-top:10px;
+
+}
+
+.card h2{
+
+    color:#003366;
+
+    font-size:34px;
+
+}
+
+.card p{
+
+    color:#555;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+/* =====================================
+   BOTONES TARJETAS
+===================================== */
+
+.btn-card{
+
+    color:white;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+    margin-top:20px;
+
+}
+
+/* =====================================
+   COLORES
+===================================== */
+
+.manuales{
+
+    border-top:8px solid #0d47a1;
+
+}
+
+.manuales .btn-card{
+
+    background:#0d47a1;
+
+}
+
+.documentacion{
+
+    border-top:8px solid #16a34a;
+
+}
+
+.documentacion .btn-card{
+
+    background:#16a34a;
+
+}
+
+.herramientas{
+
+    border-top:8px solid #f59e0b;
+
+}
+
+.herramientas .btn-card{
+
+    background:#f59e0b;
+
+}
+
+.maquinas{
+
+    border-top:8px solid #7c3aed;
+
+}
+
+.maquinas .btn-card{
+
+    background:#7c3aed;
+
+}
+
+.qr{
+
+    border-top:8px solid #0891b2;
+
+}
+
+.qr .btn-card{
+
+    background:#0891b2;
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+
+    background:#002b66;
+
+    color:white;
+
+    padding:25px;
+
+    margin-top:40px;
+
+}
+
+.footer-contenido{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:50px;
+
+    flex-wrap:wrap;
+
+    text-align:center;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media(max-width:768px){
+
+    header h1{
+
+        font-size:34px;
+
+    }
+
+    header h2{
+
+        font-size:18px;
+
+    }
+
+    .logo{
+
+        width:180px;
+
+    }
+
+    .hero h2{
+
+        font-size:28px;
+
+    }
+
+    .hero p{
+
+        font-size:17px;
+
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+```css
+/* =====================================
+   EFECTO PROFESIONAL
+===================================== */
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    top:-30px;
+
+    right:-30px;
+}

@@ -1,0 +1,164 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Herramientas - Aeronáutica</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+    <img src="{{ url_for('static', filename='img/logo.png') }}"
+         class="logo">
+
+    <h2>FACULTAD DE TECNOLOGÍA</h2>
+
+    <h1>CARRERA DE AERONÁUTICA</h1>
+
+    <h3>PLATAFORMA DIGITAL DE AYUDA RÁPIDA</h3>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-contenido">
+
+        <h2>HERRAMIENTAS</h2>
+
+        <p>
+
+            Seleccione una categoría para consultar el inventario
+            digital de herramientas disponible en los talleres
+            de la Carrera de Aeronáutica.
+
+        </p>
+
+    </div>
+
+</section>
+
+<main>
+
+    <div class="cards">
+
+        <a href="/herramientas/montaje"
+           class="card manuales">
+
+            <div class="icono">🔧</div>
+
+            <h2>MONTAJE</h2>
+
+            <p>
+                Dados, sockets, accesorios
+                y elementos de montaje.
+            </p>
+
+            <span class="btn-card">
+                Abrir Inventario →
+            </span>
+
+        </a>
+
+        <a href="/herramientas/sujecion"
+           class="card documentacion">
+
+            <div class="icono">🧰</div>
+
+            <h2>SUJECIÓN</h2>
+
+            <p>
+                Llaves, ajustes, fijación
+                y herramientas de sujeción.
+            </p>
+
+            <span class="btn-card">
+                Abrir Inventario →
+            </span>
+
+        </a>
+
+        <a href="/herramientas/medicion"
+           class="card herramientas">
+
+            <div class="icono">📏</div>
+
+            <h2>MEDICIÓN</h2>
+
+            <p>
+                Instrumentos de medición,
+                control y verificación.
+            </p>
+
+            <span class="btn-card">
+                Abrir Inventario →
+            </span>
+
+        </a>
+
+        <a href="/herramientas/corte"
+           class="card maquinas">
+
+            <div class="icono">✂️</div>
+
+            <h2>CORTE</h2>
+
+            <p>
+                Herramientas de corte,
+                limas y desbaste.
+            </p>
+
+            <span class="btn-card">
+                Abrir Inventario →
+            </span>
+
+        </a>
+
+        <a href="/herramientas/golpe"
+           class="card qr">
+
+            <div class="icono">🔨</div>
+
+            <h2>GOLPE</h2>
+
+            <p>
+                Martillos y herramientas
+                destinadas al impacto.
+            </p>
+
+            <span class="btn-card">
+                Abrir Inventario →
+            </span>
+
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="footer-contenido">
+
+        <span>🎓 UNIVERSIDAD MAYOR DE SAN ANDRÉS</span>
+
+        <span>🏛 FACULTAD DE TECNOLOGÍA</span>
+
+        <span>✈ CARRERA DE AERONÁUTICA</span>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>
+```

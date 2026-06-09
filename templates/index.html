@@ -1,0 +1,161 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Plataforma Digital Aeronáutica</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+    <img src="{{ url_for('static', filename='img/logo.png') }}"
+         class="logo">
+
+    <h2>FACULTAD DE TECNOLOGÍA</h2>
+
+    <h1>CARRERA DE AERONÁUTICA</h1>
+
+    <h3>PLATAFORMA DIGITAL DE AYUDA RÁPIDA</h3>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-contenido">
+
+        <h2>SISTEMA DE CONSULTA TÉCNICA AERONÁUTICA</h2>
+
+        <p>
+
+            Esta plataforma digital fue desarrollada para brindar acceso
+            rápido y organizado a documentación aeronáutica, manuales,
+            herramientas, información de máquinas y recursos multimedia
+            utilizados en la formación académica de los estudiantes de la
+            Carrera de Aeronáutica de la Facultad de Tecnología.
+
+        </p>
+
+    </div>
+
+</section>
+
+<main>
+
+    <div class="cards">
+
+        <a href="/manuales" class="card manuales">
+
+            <div class="icono">📘</div>
+
+            <h2>MANUALES</h2>
+
+            <p>
+                Consulta de manuales técnicos,
+                documentos y motores.
+            </p>
+
+            <span class="btn-card">
+                Acceder →
+            </span>
+
+        </a>
+
+        <a href="/documentacion" class="card documentacion">
+
+            <div class="icono">📂</div>
+
+            <h2>DOCUMENTACIÓN</h2>
+
+            <p>
+                Normativa OACI, documentos
+                y material académico.
+            </p>
+
+            <span class="btn-card">
+                Acceder →
+            </span>
+
+        </a>
+
+        <a href="/herramientas" class="card herramientas">
+
+            <div class="icono">🛠</div>
+
+            <h2>HERRAMIENTAS</h2>
+
+            <p>
+                Inventario digital y búsqueda
+                de herramientas.
+            </p>
+
+            <span class="btn-card">
+                Acceder →
+            </span>
+
+        </a>
+
+        <a href="/maquinas" class="card maquinas">
+
+            <div class="icono">⚙</div>
+
+            <h2>MÁQUINAS</h2>
+
+            <p>
+                Información técnica de
+                maquinaria y equipos.
+            </p>
+
+            <span class="btn-card">
+                Acceder →
+            </span>
+
+        </a>
+
+        <a href="/qr" class="card qr">
+
+            <div class="icono">🎥</div>
+
+            <h2>RECURSOS QR</h2>
+
+            <p>
+                Acceso a videos y material
+                multimedia mediante QR.
+            </p>
+
+            <span class="btn-card">
+                Acceder →
+            </span>
+
+        </a>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="footer-contenido">
+
+        <span>🎓 UNIVERSIDAD MAYOR DE SAN ANDRÉS</span>
+
+        <span>🏛 FACULTAD DE TECNOLOGÍA</span>
+
+        <span>✈ CARRERA DE AERONÁUTICA</span>
+
+    </div>
+
+</footer>
+
+</body>
+
+</html>
+```

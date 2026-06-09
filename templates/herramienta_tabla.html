@@ -1,0 +1,173 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>{{ titulo }}</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+    <img src="{{ url_for('static', filename='img/logo.png') }}"
+         class="logo">
+
+    <h2>FACULTAD DE TECNOLOGÍA</h2>
+
+    <h1>CARRERA DE AERONÁUTICA</h1>
+
+    <h3>PLATAFORMA DIGITAL DE AYUDA RÁPIDA</h3>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-contenido">
+
+        <h2>{{ titulo }}</h2>
+
+        <p>
+            Inventario digital de herramientas.
+        </p>
+
+    </div>
+
+</section>
+
+<main style="width:95%;max-width:1600px;margin:auto;">
+
+    <div style="margin-bottom:30px;">
+
+        <a href="/herramientas"
+           class="btn-card"
+           style="text-decoration:none;background:#003366;">
+            ← Volver a Herramientas
+        </a>
+
+    </div>
+
+    <input
+        type="text"
+        id="buscador"
+        placeholder="Buscar herramienta..."
+        style="
+        width:100%;
+        padding:15px;
+        font-size:18px;
+        border-radius:10px;
+        border:2px solid #ccc;
+        margin-bottom:25px;">
+
+    <div style="overflow-x:auto;">
+
+        <table id="tablaHerramientas"
+               style="
+               width:100%;
+               border-collapse:collapse;
+               background:white;
+               box-shadow:0 10px 25px rgba(0,0,0,.10);
+               border-radius:15px;
+               overflow:hidden;">
+
+            <thead>
+
+                <tr style="background:#003366;color:white;">
+
+                    <th style="padding:15px;">N°</th>
+                    <th style="padding:15px;">DESCRIPCIÓN</th>
+                    <th style="padding:15px;">MARCA</th>
+                    <th style="padding:15px;">MEDIDA</th>
+                    <th style="padding:15px;">PART NUMBER</th>
+                    <th style="padding:15px;">CANTIDAD</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                {% for h in herramientas %}
+
+                <tr>
+
+                    <td style="padding:12px;border-bottom:1px solid #ddd;">{{ h[0] }}</td>
+
+                    <td style="padding:12px;border-bottom:1px solid #ddd;">{{ h[1] }}</td>
+
+                    <td style="padding:12px;border-bottom:1px solid #ddd;">{{ h[2] }}</td>
+
+                    <td style="padding:12px;border-bottom:1px solid #ddd;">{{ h[3] }}</td>
+
+                    <td style="padding:12px;border-bottom:1px solid #ddd;">{{ h[4] }}</td>
+
+                    <td style="padding:12px;border-bottom:1px solid #ddd;">{{ h[5] }}</td>
+
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</main>
+
+<footer>
+
+    <div class="footer-contenido">
+
+        <span>🎓 UNIVERSIDAD MAYOR DE SAN ANDRÉS</span>
+
+        <span>🏛 FACULTAD DE TECNOLOGÍA</span>
+
+        <span>✈ CARRERA DE AERONÁUTICA</span>
+
+    </div>
+
+</footer>
+
+<script>
+
+const buscador =
+document.getElementById("buscador");
+
+buscador.addEventListener("keyup", function(){
+
+let filtro =
+this.value.toLowerCase();
+
+let filas =
+document.querySelectorAll(
+"#tablaHerramientas tbody tr"
+);
+
+filas.forEach(fila => {
+
+let texto =
+fila.textContent.toLowerCase();
+
+fila.style.display =
+texto.includes(filtro)
+? ""
+: "none";
+
+});
+
+});
+
+</script>
+
+</body>
+
+</html>
+```
