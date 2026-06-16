@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="es">
 
@@ -14,6 +13,16 @@
 </head>
 
 <body>
+
+<div class="barra-superior">
+
+    <a href="/" class="btn-volver">
+
+        🏠 Volver al Inicio
+
+    </a>
+
+</div>
 
 <header>
 
@@ -46,7 +55,41 @@
 
 </section>
 
-<main>
+<div class="contenedor-principal">
+
+<aside class="sidebar">
+
+<h3>📚 NAVEGACIÓN</h3>
+
+<a href="/">🏠 Inicio</a>
+
+<a href="/herramientas">🛠 Herramientas</a>
+
+<div class="submenu">
+
+<a href="/herramientas/montaje">• Montaje</a>
+
+<a href="/herramientas/sujecion">• Sujeción</a>
+
+<a href="/herramientas/medicion">• Medición</a>
+
+<a href="/herramientas/corte">• Corte</a>
+
+<a href="/herramientas/golpe">• Golpe</a>
+
+</div>
+
+<a href="/maquinas">⚙ Máquinas</a>
+
+<a href="/qr">📱 QR</a>
+
+<a href="/manuales">📘 Manuales</a>
+
+<a href="/documentacion">📂 Documentación</a>
+
+</aside>
+
+<main class="contenido">
 
     <div class="cards">
 
@@ -144,6 +187,8 @@
 
 </main>
 
+</div>
+
 <footer>
 
     <div class="footer-contenido">
@@ -157,8 +202,26 @@
     </div>
 
 </footer>
+<button class="btn-subir"
+onclick="window.scrollTo({
+    top:0,
+    behavior:'smooth'
+})">
 
+⬆
+
+</button>
+
+<button class="btn-bajar"
+onclick="window.scrollTo({
+    top:document.body.scrollHeight,
+    behavior:'smooth'
+})">
+
+⬇
+
+</button>
 </body>
 
 </html>
-```
+
